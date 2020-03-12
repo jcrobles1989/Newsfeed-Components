@@ -112,3 +112,32 @@ const data = [
   Step 5: Add a new article to the array. Make sure it is in the same format as the others. Refresh the page to see the new article.
 
 */
+
+
+function createPanel(data) {
+
+  const articlePanel = document.createElement('div');
+  const articleTitle = document.createElement('h2');
+  const articleDate = document.createElement('p');
+  const articleFirstPara = document.createElement('p');
+  const articleSecondPara = document.createElement('p');
+  const articleThirdPara = document.createElement('p');
+  const articleExpand = document.createElement('span');
+
+// add classes to elements
+
+articlePanel.classList.add('panel');
+articleContent.classList.add('articleContent');
+
+// articleExpand eventListener
+
+articleExpand.addEventListener('click', (event) => {
+  article.classList.toggle('article-open')
+});
+
+return articlePanel
+}
+
+data.forEach( data => {
+  accordion.append(createPanel(data.articleTitle, data.articleContent))
+})
