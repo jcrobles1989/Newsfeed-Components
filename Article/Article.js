@@ -126,7 +126,6 @@ function createArticle(arr) {
 // structure elements
 article.append(articleTitle, articleDate, articleFirstPara, articleSecondPara, articleThirdPara, articleExpand)
 
-
 // add classes to elements
 
 article.classList.add('article')
